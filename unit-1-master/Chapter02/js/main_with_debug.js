@@ -55,7 +55,7 @@ function populateExistingData(table){
 	//loop to add a new row for each city
 	for (let i = 0; i < cityPop.length; i++){
 		const tr = document.createElement("tr");
-
+		//copmment
 		const city = document.createElement("td");
 		city.innerHTML = cityPop[i].city;
 		tr.appendChild(city);
@@ -125,7 +125,6 @@ function addEvents(){
 	};
 
 	document.querySelector("table").addEventListener("click", clickme);
-	//document.querySelector("table").removeEventListener("click", clickme);
 	});
 };
 
