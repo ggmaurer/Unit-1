@@ -1,0 +1,8 @@
+/* Stylesheet by Gavin Maurer */
+
+#mydiv {
+        background-color: purple;
+        width: 75%;
+        margin: 0 auto;
+        height: 100px;
+}
