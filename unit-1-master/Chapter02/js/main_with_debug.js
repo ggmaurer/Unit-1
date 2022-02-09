@@ -110,7 +110,7 @@ function addEvents(){
 		
 		for (let i = 0; i < 3; i++){
 			//setting up the random color selection
-			let random = Math.round(Math.random() * 255);
+			const random = Math.round(Math.random() * 255);
 
 			color += random;
 
