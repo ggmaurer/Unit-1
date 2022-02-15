@@ -135,21 +135,23 @@ function addEvents(){
 	});
 };
 
-//onloads all the functions within initialize to the window
 
 
 
+//posts the data to the page
 function debugCallback(response){
 	document.querySelector("#mydiv").insertAdjacentHTML('beforeend', 'GeoJSON data: </br>' + JSON.stringify(response))
 };
 
 function debugAjax(){
-	
+//fetches the data from JSON file
 	fetch("data/TheBigCities.json")
 		.then(function(response){
+			//converts to JSON
 			return response.json();
 		})
 			.then(debugCallback);
 		};	
 
+//onloads all the functions within initialize to the window
 window.onload = initialize();
